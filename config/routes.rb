@@ -16,6 +16,7 @@ Tasker::Application.routes.draw do
   resources :tasks do
     member do
       post 'assign'
+      post 'answer'
     end
     collection do
       get 'mytasks'

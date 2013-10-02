@@ -41,4 +41,5 @@ class User
   ## Token authenticatable
   field :authentication_token, :type => String
 
+  has_and_belongs_to_many :tasks
 end

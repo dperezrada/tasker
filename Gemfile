@@ -5,7 +5,7 @@ gem 'rails', '3.2.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem "mongoid", "~> 3.0.0"
+gem "mongoid", "~> 3.1.0"
 
 gem 'devise'
 
@@ -28,7 +28,14 @@ group :development, :test do
     gem "json_spec"
 end
 
+group :test do
+	gem "debugger"
+end
+
 gem 'jquery-rails'
+
+gem 'rabl'
+gem "oj"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
